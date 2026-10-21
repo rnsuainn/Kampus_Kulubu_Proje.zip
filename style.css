@@ -13,6 +13,14 @@ main { max-width: 1100px; margin: 0 auto; padding: 48px 24px; min-height: 65vh; 
 h1 { font-size: clamp(34px, 5vw, 60px); line-height: 1.12; max-width: 850px; margin: 20px 0; }
 .intro { font-size: 21px; max-width: 730px; color: #496272; }
 .button { display: inline-block; margin: 16px 0 32px; padding: 13px 24px; background: #087d70; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; }
+.search-tools { display: grid; gap: 8px; max-width: 600px; margin-top: 28px; }
+.search-tools label { font-weight: bold; }
+.search-row { display: flex; gap: 10px; }
+.search-row input { flex: 1; min-width: 0; padding: 11px 12px; border: 1px solid #9aadb8; border-radius: 4px; font: inherit; }
+.search-row input:focus-visible, .search-row button:focus-visible { outline: 3px solid #e1a82b; outline-offset: 3px; }
+.search-row button { padding: 10px 16px; border: 0; border-radius: 4px; background: #087d70; color: white; font: inherit; font-weight: bold; cursor: pointer; }
+#result-count, .no-results { margin: 0; color: #496272; }
+.grid article[hidden] { display: none; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 32px; }
 article { background: white; border-top: 4px solid #087d70; padding: 25px; border-radius: 6px; }
 article h2 { margin: 10px 0; font-size: 23px; }
